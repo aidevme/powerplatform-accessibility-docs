@@ -1,0 +1,17 @@
+{
+  // Shared rule config for the markdownlint VS Code extension and markdownlint-cli2.
+  // Default rule set, with the following adjustments for prose documentation:
+  "default": true,
+
+  // MD013/line-length: docs are prose, not code — don't enforce a wrap column.
+  "MD013": false,
+
+  // MD033/no-inline-html: allow inline HTML (e.g. <br>, callout markup) where useful.
+  "MD033": false,
+
+  // MD025/single-title: our page template (WRITING_STYLE.md) intentionally repeats
+  // the frontmatter `title` as a body H1 — don't count the frontmatter title as a heading.
+  "MD025": {
+    "front_matter_title": ""
+  }
+}

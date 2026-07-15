@@ -16,12 +16,28 @@ We follow Microsoft's documentation standards to ensure consistent, high-quality
 
 ## Editing in VS Code
 
-There's no repo-level linting configuration, but these extensions still help catch basic issues as you write:
+These extensions help catch basic issues as you write:
 
-- **[markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)** — real-time markdown formatting feedback (uses its default rule set, since this repo has no `.markdownlint.jsonc`).
+- **[markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)** — real-time markdown formatting feedback, using the rules defined in [`.markdownlint.jsonc`](.markdownlint.jsonc).
 - **[Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)** — flags likely typos. Power Platform product names and accessibility terms (Dataverse, Liquid, WCAG, ARIA, etc.) will trigger false positives — use "Add to Workspace Dictionary" for legitimate terms rather than ignoring them.
 
 VS Code can also preview Markdown natively: open a `.md` file and use **Open Preview** (`Ctrl+Shift+V`) to check rendering and links before submitting.
+
+### Linting from the command line
+
+There's no `package.json` in this repo, so [markdownlint-cli2](https://github.com/DavidAnson/markdownlint-cli2) is meant to be installed globally rather than as a project dependency:
+
+```sh
+npm install -g markdownlint-cli2
+```
+
+Then lint all docs from the repo root (it automatically picks up `.markdownlint.jsonc`):
+
+```sh
+markdownlint-cli2 "**/*.md"
+```
+
+There's no CI workflow enforcing this yet — running it locally before submitting a PR is currently the only check in place.
 
 ## Branch Naming Convention
 
