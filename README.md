@@ -1,5 +1,7 @@
 # Power Platform Accessibility Documentation
 
+![Power Platform Accessibility Documentation — a universal accessibility icon connected to icons representing Power Pages, PCF components, Canvas Apps, Model-Driven Apps, and Power Automate, on a blue-to-purple gradient background](assets/social-preview.png)
+
 [![Validate markdown](https://github.com/aidevme/powerplatform-accessibility-docs/actions/workflows/validate-markdown.yml/badge.svg)](https://github.com/aidevme/powerplatform-accessibility-docs/actions/workflows/validate-markdown.yml)
 
 A curated, community-driven knowledge base of accessibility (WCAG 2.1/2.2, EN 301 549, Section 508) guidance for the Microsoft Power Platform — covering Power Pages, PCF components, Canvas Apps, Model-Driven Apps, and Power Automate — built for architects and developers shipping compliant enterprise solutions.
