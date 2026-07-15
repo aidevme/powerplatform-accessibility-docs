@@ -23,6 +23,13 @@ There's no repo-level linting configuration, but these extensions still help cat
 
 VS Code can also preview Markdown natively: open a `.md` file and use **Open Preview** (`Ctrl+Shift+V`) to check rendering and links before submitting.
 
+## Branch Naming Convention
+
+Use the following prefixes for branch names:
+
+- `docs/` - For documentation changes (e.g., `docs/update-api-guide`)
+- `chore/` - For maintenance tasks (e.g., `chore/update-dependencies`)
+
 ## Submitting changes
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for scope, page structure, frontmatter requirements, and commit message conventions ([Conventional Commits](https://www.conventionalcommits.org/)).
