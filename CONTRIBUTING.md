@@ -2,6 +2,10 @@
 
 Thanks for helping build a curated, trustworthy accessibility knowledge base for Power Platform. This project is almost entirely documentation, so most contributions are writing, correcting, or reviewing content rather than code.
 
+## About this repository
+
+This is a documentation-only repository: plain Markdown files under [`docs/`](docs), with no build step, package manager, or static site generator. There's no `package.json`—linting and spell-checking tools ([markdownlint-cli2](https://github.com/DavidAnson/markdownlint-cli2), [cspell](https://cspell.org/)) are meant to be installed globally rather than as project dependencies.
+
 ## Ways to contribute
 
 - **Fix an inaccuracy** — outdated guidance, wrong defaults, incorrect standard references.
@@ -20,7 +24,6 @@ This repo covers accessibility (WCAG 2.1/2.2, EN 301 549, Section 508) guidance 
 - PCF components
 - Canvas Apps
 - Model-Driven Apps
-- Power Automate
 
 Content should be useful to architects and developers shipping compliant enterprise solutions — practical, actionable, and traceable to an authoritative source. General Power Platform how-to content that isn't accessibility-related is out of scope.
 
@@ -48,6 +51,39 @@ Content should be useful to architects and developers shipping compliant enterpr
 - Prefer restructuring/summarizing source material over copying it verbatim; add a "Related links" section at the end pointing back to the original source(s).
 - Keep guidance practical: where relevant, prefer adding a short checklist or table over long prose.
 
+## Editing and linting
+
+For general writing guidance beyond this repo's own conventions, see the 📖 [Microsoft Docs Authoring Pack](https://learn.microsoft.com/contribute/content/how-to-write-docs-auth-pack)—clear content, markdown conventions, terminology, structure, and accessibility best practices for the docs themselves.
+
+**In VS Code**, these extensions catch issues as you write:
+
+- **[markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)**—real-time markdown formatting feedback, using the rules in [`.markdownlint.jsonc`](.markdownlint.jsonc).
+- **[Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)**—flags likely typos, using the dictionary in [`cspell.json`](cspell.json). Power Platform product names and accessibility terms (Dataverse, Liquid, WCAG, ARIA, etc.) will trigger false positives if they're missing from `cspell.json`—add genuinely new terms there rather than ignoring them locally.
+
+VS Code can also preview Markdown natively: open a `.md` file and use **Open Preview** (`Ctrl+Shift+V`) to check rendering and links before submitting.
+
+**From the command line**, install both tools globally (there's no `package.json` to install them as project dependencies):
+
+```sh
+npm install -g markdownlint-cli2 cspell
+```
+
+Then run them from the repo root—both automatically pick up their config files (`.markdownlint.jsonc`, `cspell.json`):
+
+```sh
+markdownlint-cli2 "**/*.md"
+cspell "**/*.md"
+```
+
+**In CI:** the [`validate-markdown`](.github/workflows/validate-markdown.yml) workflow runs markdownlint, a link checker, and cspell on every pull request—running the commands above locally first means no surprises when the workflow runs.
+
+## Branch naming convention
+
+Use the following prefixes for branch names:
+
+- `docs/`—for documentation changes (e.g., `docs/update-api-guide`)
+- `chore/`—for maintenance tasks (e.g., `chore/update-dependencies`)
+
 ## Submitting changes
 
 1. Fork the repo (or create a branch if you have write access).
@@ -69,6 +105,10 @@ Content should be useful to architects and developers shipping compliant enterpr
 - Prefer clarity and brevity over exhaustive restatement of the source material.
 - Accessibility terminology and standard names (WCAG 2.1 vs 2.2, Section 508, EN 301 549) should be used precisely — don't conflate them.
 - Reviewers may ask for a source link or a more recent reference if content looks outdated.
+
+## Questions?
+
+Check existing [issues](.github/ISSUE_TEMPLATE/) for similar questions first, then open a new issue, or start a [GitHub Discussion](https://github.com/aidevme/powerplatform-accessibility-docs/discussions) for general questions.
 
 ## Code of conduct
 

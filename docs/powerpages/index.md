@@ -7,13 +7,15 @@ last_verified: 2026-07-15
 
 # Accessibility in Power Pages
 
-Microsoft is committed to making its products and services accessible to everyone. This page summarizes the accessibility standards Power Pages conforms to out of the box, and — more importantly for architects and developers — outlines **what you remain responsible for** once you start customizing a site.
+Microsoft is committed to making its products and services accessible to everyone. This page summarizes the accessibility standards Power Pages conforms to out of the box, and—more importantly for architects and developers—outlines **what you remain responsible for** once you start customizing a site.
 
 > For general Microsoft accessibility information, see the [Microsoft Accessibility](https://www.microsoft.com/accessibility) website and [Accessibility features of Microsoft products](https://www.microsoft.com/en-us/accessibility).
 
 ## Key takeaway for solution builders
 
 Power Pages the *platform* conforms to WCAG 2.2, Section 508, and EN 301 549. However, conformance is not automatically inherited by your site once you add custom HTML, Liquid, JavaScript, CSS, or embedded components (Power BI reports, custom web templates, etc.). **You own the accessibility of anything you customize.**
+
+> **For Solution Architects:** Power Pages is the strongest conformance story in this repo—explicit, documented conformance to WCAG 2.2, Section 508, and EN 301 549 (see [comparison across surfaces](../index.md)). You can tell stakeholders the platform conforms; you can't tell them the *site* conforms until every customization (Liquid, HTML, embedded components) has been reviewed. Effort to reach full compliance: **Low–Medium**, concentrated entirely on what you customize.
 
 ## Accessibility standards Power Pages conforms to
 
@@ -72,7 +74,7 @@ Controls in basic forms are built to follow WCAG 2.2. The following options help
 
 When you add custom HTML and [Liquid](../configure/liquid-overview) content to a Power Pages site, accessibility must be explicitly considered. Whoever edits Liquid templates or [content snippets](../configure/content-snippets) is responsible for ensuring that content is accessible and adheres to the required policies (e.g., WCAG 2.2, US Section 508, ETSI EN 301 549).
 
-- Reference: [WCAG 2.2 Quick Reference](https://www.w3.org/WAI/WCAG22/quickref/) — a searchable list of WCAG requirements with links to full descriptions.
+- Reference: [WCAG 2.2 Quick Reference](https://www.w3.org/WAI/WCAG22/quickref/)—a searchable list of WCAG requirements with links to full descriptions.
 
 ### Power BI embeds
 
@@ -84,18 +86,18 @@ Power Pages lets you embed Power BI reports/dashboards as a [first-party compone
 
 Practical checks to apply during development and QA:
 
-- **Parity of experience** — a non-sighted or visually impaired person must be able to do everything a sighted user can do.
-- **Reflow at 400% zoom** — verify text stays readable and pages/controls function as expected. See [WCAG 1.4.10 (Reflow)](https://www.w3.org/WAI/WCAG22/Understanding/reflow).
-- **Color contrast** — use a color contrast checking tool. See [WCAG 1.4.3 (Contrast Minimum)](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html).
-- **Don't rely on color alone** — if color highlights meaning or state, also convey it through text or another visual cue. See [WCAG 1.4.1 (Use of Color)](https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html).
-- **Alt text on every `<img>`** — use an empty `alt=""` to hide purely decorative images from screen readers (ideally define decorative images via CSS instead). See [WCAG C9](https://www.w3.org/WAI/WCAG22/Techniques/css/C9.html).
-- **Automated scanning** — use [Accessibility Insights](https://accessibilityinsights.io/) for two types of scans:
-  - [FastPass](https://accessibilityinsights.io/docs/web/getstarted/fastpass/) — automated check against dozens of common accessibility requirements.
-  - [Assessment](https://accessibilityinsights.io/docs/web/getstarted/assessment/) — measures compliance against WCAG 2.2 Level AA success criteria.
-- **Follow ARIA authoring patterns** — apply [WAI-ARIA Authoring Practices](https://www.w3.org/TR/wai-aria-practices/) when designing page layout and custom widgets.
+- **Parity of experience**—a person who is blind or has low vision must be able to do everything a sighted user can do.
+- **Reflow at 400% zoom**—verify text stays readable and pages/controls function as expected. See [WCAG 1.4.10 (Reflow)](https://www.w3.org/WAI/WCAG22/Understanding/reflow).
+- **Color contrast**—use a color contrast checking tool. See [WCAG 1.4.3 (Contrast Minimum)](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html).
+- **Don't rely on color alone**—if color highlights meaning or state, also convey it through text or another visual cue. See [WCAG 1.4.1 (Use of Color)](https://www.w3.org/WAI/WCAG22/Understanding/use-of-color.html).
+- **Alt text on every `<img>`**—use an empty `alt=""` to hide purely decorative images from screen readers (ideally define decorative images via CSS instead). See [WCAG C9](https://www.w3.org/WAI/WCAG22/Techniques/css/C9.html).
+- **Automated scanning**—use [Accessibility Insights](https://accessibilityinsights.io/) for two types of scans:
+  - [FastPass](https://accessibilityinsights.io/docs/web/getstarted/fastpass/)—automated check against dozens of common accessibility requirements.
+  - [Assessment](https://accessibilityinsights.io/docs/web/getstarted/assessment/)—measures compliance against WCAG 2.2 Level AA success criteria.
+- **Follow ARIA authoring patterns**—apply [WAI-ARIA Authoring Practices](https://www.w3.org/TR/wai-aria-practices/) when designing page layout and custom widgets.
 - **Test with real assistive tech**:
   - Screen reader: [Windows Narrator](https://support.microsoft.com/windows/chapter-1-introducing-narrator-7fe8fd72-541f-4536-7658-bfc37ddaf9c6#WindowsVersion=Windows_11).
-  - [Immersive Reader](https://education.microsoft.com/resource/9b010288) in Microsoft Edge — confirm the site renders and reads correctly, adjusting as needed.
+  - [Immersive Reader](https://education.microsoft.com/resource/9b010288) in Microsoft Edge—confirm the site renders and reads correctly, adjusting as needed.
 
 ## Suggested review checklist
 
@@ -123,4 +125,4 @@ Microsoft accessibility features help organizations address accessibility requir
 - [WCAG 2.2 Quick Reference](https://www.w3.org/WAI/WCAG22/quickref/)
 - [WAI-ARIA Authoring Practices 1.1](https://www.w3.org/TR/wai-aria-practices/)
 - [Accessibility Insights](https://accessibilityinsights.io/)
-- [Source: Microsoft Learn — Accessibility in Power Pages](https://learn.microsoft.com/en-us/power-pages/admin/accessibility)
+- [Source: Microsoft Learn—Accessibility in Power Pages](https://learn.microsoft.com/en-us/power-pages/admin/accessibility)

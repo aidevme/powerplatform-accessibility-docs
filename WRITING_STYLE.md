@@ -1,6 +1,6 @@
 # Writing Style Guide
 
-This guide provides prescriptive instructions for writing accessibility guidance pages in this repository. For scope, frontmatter requirements, and how to submit changes, see [CONTRIBUTING.md](CONTRIBUTING.md); for environment setup, see [CONTRIBUTING-GENERAL.md](CONTRIBUTING-GENERAL.md).
+This guide provides prescriptive instructions for writing accessibility guidance pages in this repository. For scope, frontmatter requirements, environment setup, and how to submit changes, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Required Page Structure
 
@@ -92,6 +92,5 @@ End sections that describe actionable guidance with a `- [ ]` checklist the read
 
 ## Additional Resources
 
-- [CONTRIBUTING.md](CONTRIBUTING.md) — scope, frontmatter, and submission process.
-- [CONTRIBUTING-GENERAL.md](CONTRIBUTING-GENERAL.md) — environment setup and editing tools.
+- [CONTRIBUTING.md](CONTRIBUTING.md) — scope, frontmatter, submission process, environment setup, and editing tools.
 - [Microsoft Writing Style Guide](https://learn.microsoft.com/style-guide/welcome/) — official Microsoft style and terminology guide.
