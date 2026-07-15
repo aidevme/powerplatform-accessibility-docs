@@ -9,10 +9,12 @@
     "ETSI",
     "fluentui",
     "Frontmatter",
+    "keyborg",
     "powerapps",
     "powerpages",
     "powerplatform",
     "react",
+    "tabster",
     "WCAG"
   ],
   "ignorePaths": [
