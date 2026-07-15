@@ -1,0 +1,61 @@
+name: 🐛 Documentation inaccuracy
+description: Report incorrect, misleading, or outdated guidance in an existing doc page.
+title: "[Inaccuracy]: "
+labels: ["documentation", "inaccuracy"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page(s) affected
+      description: Path or URL of the doc page(s), e.g. docs/powerpages/index.md
+      placeholder: docs/powerpages/index.md
+    validations:
+      required: true
+
+  - type: dropdown
+    id: standard
+    attributes:
+      label: Related standard(s)
+      description: Which accessibility standard(s) does this concern?
+      multiple: true
+      options:
+        - WCAG 2.1
+        - WCAG 2.2
+        - Section 508
+        - EN 301 549
+        - Not standard-specific
+    validations:
+      required: false
+
+  - type: textarea
+    id: current
+    attributes:
+      label: What the doc currently says
+      description: Quote or paraphrase the incorrect/misleading section.
+    validations:
+      required: true
+
+  - type: textarea
+    id: correct
+    attributes:
+      label: What it should say instead
+      description: Provide the correction, with a source/reference if possible (Microsoft Learn, WCAG spec, product behavior you observed, etc.).
+    validations:
+      required: true
+
+  - type: input
+    id: source
+    attributes:
+      label: Supporting source (optional)
+      description: Link to the authoritative source backing your correction.
+      placeholder: https://learn.microsoft.com/...
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Anything else useful — component/control involved, Power Platform product area, screenshots, etc.
+    validations:
+      required: false

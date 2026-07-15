@@ -1,0 +1,41 @@
+name: 🔗 Broken or dead link
+description: Report a broken, redirected, or dead link within the documentation.
+title: "[Broken link]: "
+labels: ["documentation", "link"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page containing the link
+      placeholder: docs/powerpages/index.md
+    validations:
+      required: true
+
+  - type: input
+    id: link
+    attributes:
+      label: Broken link URL
+      placeholder: https://example.com/broken
+    validations:
+      required: true
+
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: What's wrong with it?
+      options:
+        - 404 / page not found
+        - Redirects to unrelated content
+        - Requires login / paywalled
+        - Content moved (I know the new URL)
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: replacement
+    attributes:
+      label: Suggested replacement URL (if known)
+      placeholder: https://example.com/new-location
+    validations:
+      required: false

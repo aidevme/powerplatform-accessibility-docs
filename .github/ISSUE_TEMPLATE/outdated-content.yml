@@ -1,0 +1,45 @@
+name: 🔄 Outdated content / source changed
+description: Flag a page that's stale because the upstream Microsoft Learn source (or a referenced standard) has changed.
+title: "[Outdated]: "
+labels: ["documentation", "outdated"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page(s) affected
+      placeholder: docs/powerpages/index.md
+    validations:
+      required: true
+
+  - type: input
+    id: source-url
+    attributes:
+      label: Upstream source URL
+      description: The Microsoft Learn (or other) page this doc was derived from.
+      placeholder: https://learn.microsoft.com/en-us/power-pages/admin/accessibility
+    validations:
+      required: true
+
+  - type: textarea
+    id: whats-changed
+    attributes:
+      label: What changed upstream
+      description: Summarize the diff — new sections, removed guidance, changed defaults, updated standard version, etc.
+    validations:
+      required: true
+
+  - type: input
+    id: last-verified
+    attributes:
+      label: Current "last_verified" date in our doc (if known)
+      placeholder: "2026-07-15"
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Anything else — e.g. link to the upstream revision history/changelog.
+    validations:
+      required: false

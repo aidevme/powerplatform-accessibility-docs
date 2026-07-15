@@ -1,0 +1,62 @@
+name: 📄 New documentation page
+description: Request or propose a new topic, product area, or guidance page to add.
+title: "[New doc]: "
+labels: ["documentation", "new-content"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Power Platform area
+      options:
+        - Power Pages
+        - PCF components
+        - Canvas Apps
+        - Model-Driven Apps
+        - Power Automate
+        - Cross-cutting / general
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: topic
+    attributes:
+      label: Proposed topic / page title
+      placeholder: e.g. Accessible custom PCF controls checklist
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why is this needed?
+      description: What gap does this fill? Who's the audience (architect, developer, tester)?
+    validations:
+      required: true
+
+  - type: textarea
+    id: sources
+    attributes:
+      label: Reference sources
+      description: Links to Microsoft Learn, WCAG/Section 508/EN 301 549 specs, or other authoritative material this page should be based on.
+      placeholder: |
+        - https://learn.microsoft.com/...
+        - https://www.w3.org/TR/WCAG22/
+    validations:
+      required: false
+
+  - type: textarea
+    id: outline
+    attributes:
+      label: Suggested outline (optional)
+      description: Rough section headings if you already have a structure in mind.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: contribute
+    attributes:
+      label: Contribution
+      options:
+        - label: I'm willing to draft this page myself and submit a PR.
+          required: false
