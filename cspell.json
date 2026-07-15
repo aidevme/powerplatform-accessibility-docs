@@ -4,12 +4,15 @@
   "words": [
     "blockquotes",
     "canvasapps",
+    "codeapps",
     "Dataverse",
     "ETSI",
+    "fluentui",
     "Frontmatter",
     "powerapps",
     "powerpages",
     "powerplatform",
+    "react",
     "WCAG"
   ],
   "ignorePaths": [
