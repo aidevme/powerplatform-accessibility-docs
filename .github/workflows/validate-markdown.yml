@@ -13,22 +13,22 @@ jobs:
     runs-on: ubuntu-latest
     # Checks markdown syntax and formatting
     steps:
-    - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
 
-    - name: Run markdownlint
-      uses: DavidAnson/markdownlint-cli2-action@fa017d9f059acc0a1f6d0711a36d3a50acea73cd # v24
-      continue-on-error: false
-      id: markdown-lint
-      with:
-        globs: |
-          **/*.md
-          !.github/**/*.md
-        config: '.markdownlint.jsonc'
-    
-    - name: Report markdown lint results
-      if: steps.markdown-lint.outcome == 'failure'
-      run: |
-        echo "::warning::Markdown formatting issues found. Please review the linting results above and consider fixing formatting inconsistencies for better readability."
+      - name: Run markdownlint
+        uses: DavidAnson/markdownlint-cli2-action@fa017d9f059acc0a1f6d0711a36d3a50acea73cd # v24
+        continue-on-error: false
+        id: markdown-lint
+        with:
+          globs: |
+            **/*.md
+            !.github/**/*.md
+          config: '.markdownlint.jsonc'
+      
+      - name: Report markdown lint results
+        if: steps.markdown-lint.outcome == 'failure'
+        run: |
+          echo "::warning::Markdown formatting issues found. Please review the linting results above and consider fixing formatting inconsistencies for better readability."
 
   markdown-link-check:
     name: Check markdown links
