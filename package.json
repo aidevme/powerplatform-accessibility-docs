@@ -1,0 +1,24 @@
+{
+  "name": "powerplatform-accessibility-docs",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "@fluentui/svg-icons": "^1.1.333",
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^25.9.5",
+    "gray-matter": "^4.0.3",
+    "jszip": "^3.10.1",
+    "markdownlint-cli2": "^0.23.0",
+    "simple-icons": "^16.26.0",
+    "vitepress": "^2.0.0-alpha.18"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "lint:md": "markdownlint-cli2 \"**/*.md\" \"#node_modules\""
+  },
+  "dependencies": {
+    "mermaid": "^11.16.0"
+  }
+}

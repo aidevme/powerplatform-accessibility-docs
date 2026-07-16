@@ -1,0 +1,42 @@
+# CODEOWNERS — Auto-assign reviewers for PRs
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+#
+# Each line is a file pattern followed by one or more GitHub usernames.
+# The LAST matching pattern takes precedence.
+# Order: broad rules first, then specific overrides.
+
+# ============================================================================
+# Default owner — everything not matched below
+# ============================================================================
+*                                                               @aidevme
+
+# ============================================================================
+# Documentation — per product area
+# ============================================================================
+docs/index.md                                                  @aidevme
+docs/powerpages/**                                              @aidevme
+docs/powerapps-canvas/**                                        @aidevme
+docs/powerapps-codeapps/**                                      @aidevme
+docs/powerapps-component-framework/**                            @aidevme
+docs/powerapps-generative-pages/**                               @aidevme
+docs/fluent-ui-react/**                                         @aidevme
+
+# ============================================================================
+# Repository governance
+# ============================================================================
+README.md                                                      @aidevme
+CONTRIBUTING.md                                                @aidevme
+WRITING_STYLE.md                                                @aidevme
+SECURITY.md                                                     @aidevme
+LICENSE                                                        @aidevme
+
+# ============================================================================
+# CI/CD and repo tooling
+# ============================================================================
+.github/**                                                     @aidevme
+.devcontainer/**                                                @aidevme
+package.json                                                    @aidevme
+package-lock.json                                               @aidevme
+cspell.json                                                     @aidevme
+.markdownlint.jsonc                                             @aidevme
+scripts/**                                                     @aidevme
