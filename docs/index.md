@@ -55,4 +55,4 @@ A quick heuristic if you're scoping a new build and accessibility compliance is 
 - [Power Apps—Generative/AI-generated pages](powerapps-generative-pages/index.md) *(placeholder—not yet written)*
 - [Fluent UI React (v9)](fluent-ui-react/index.md)
 
-See [CONTRIBUTING.md](../CONTRIBUTING.md) if you'd like to help fill in a placeholder page.
+See [CONTRIBUTING.md](https://github.com/aidevme/powerplatform-accessibility-docs/blob/main/CONTRIBUTING.md) if you'd like to help fill in a placeholder page.

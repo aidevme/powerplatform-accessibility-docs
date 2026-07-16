@@ -57,7 +57,7 @@ When building or extending a Power Pages site, follow the [WAI-ARIA Authoring Pr
 
 A basic form renders a model-driven Power Apps form on a webpage. Basic forms typically don't require a developer to design or configure, though a developer may be useful to extend certain form features.
 
-- More information: [How to create and modify Dataverse forms using the Data workspace](../configure/data-workspace-forms)
+- More information: [How to create and modify Dataverse forms using the Data workspace](https://learn.microsoft.com/en-us/power-pages/configure/data-workspace-forms)
 
 #### Basic form accessibility options
 
@@ -68,17 +68,17 @@ Controls in basic forms are built to follow WCAG 2.2. The following options help
 | **ToolTips Enabled** | Set using the description of the attribute on the target table. Adds a `title` attribute, giving screen readers additional information. Default: `false`. |
 | **Enable Validation Summary Links** | Boolean. When `true`, renders anchor links in the validation summary that scroll to the field containing an error. Default: `true`. |
 
-- More information: [Add a form](../getting-started/add-form)
+- More information: [Add a form](https://learn.microsoft.com/en-us/power-pages/getting-started/add-form)
 
 ### Liquid templates and content snippets
 
-When you add custom HTML and [Liquid](../configure/liquid-overview) content to a Power Pages site, accessibility must be explicitly considered. Whoever edits Liquid templates or [content snippets](../configure/content-snippets) is responsible for ensuring that content is accessible and adheres to the required policies (e.g., WCAG 2.2, US Section 508, ETSI EN 301 549).
+When you add custom HTML and [Liquid](https://learn.microsoft.com/en-us/power-pages/configure/liquid-overview) content to a Power Pages site, accessibility must be explicitly considered. Whoever edits Liquid templates or [content snippets](https://learn.microsoft.com/en-us/power-pages/configure/content-snippets) is responsible for ensuring that content is accessible and adheres to the required policies (e.g., WCAG 2.2, US Section 508, ETSI EN 301 549).
 
 - Reference: [WCAG 2.2 Quick Reference](https://www.w3.org/WAI/WCAG22/quickref/)—a searchable list of WCAG requirements with links to full descriptions.
 
 ### Power BI embeds
 
-Power Pages lets you embed Power BI reports/dashboards as a [first-party component](../getting-started/add-power-bi). As the report/dashboard author, you're responsible for ensuring your Power BI content itself is accessible.
+Power Pages lets you embed Power BI reports/dashboards as a [first-party component](https://learn.microsoft.com/en-us/power-pages/getting-started/add-power-bi). As the report/dashboard author, you're responsible for ensuring your Power BI content itself is accessible.
 
 - More information: [Power BI accessibility guide](https://learn.microsoft.com/en-us/power-bi/create-reports/desktop-accessibility-creating-reports)
 
