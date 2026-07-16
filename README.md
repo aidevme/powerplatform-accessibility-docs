@@ -3,6 +3,7 @@
 ![Power Platform Accessibility Documentation—a universal accessibility icon connected to icons representing Power Pages, PCF components, Canvas Apps, Model-Driven Apps, and Power Automate, on a blue-to-purple gradient background](assets/social-preview.png)
 
 [![Validate markdown](https://github.com/aidevme/powerplatform-accessibility-docs/actions/workflows/validate-markdown.yml/badge.svg)](https://github.com/aidevme/powerplatform-accessibility-docs/actions/workflows/validate-markdown.yml)
+[![Deploy VitePress site to Pages](https://github.com/aidevme/powerplatform-accessibility-docs/actions/workflows/deploy-vitepress.yml/badge.svg)](https://github.com/aidevme/powerplatform-accessibility-docs/actions/workflows/deploy-vitepress.yml)
 [![GitHub stars](https://img.shields.io/github/stars/aidevme/powerplatform-accessibility-docs?style=social)](https://github.com/aidevme/powerplatform-accessibility-docs/stargazers)
 [![GitHub watchers](https://img.shields.io/github/watchers/aidevme/powerplatform-accessibility-docs?style=social)](https://github.com/aidevme/powerplatform-accessibility-docs/watchers)
 
@@ -18,11 +19,11 @@ The published documentation site is available at **[aidevme.github.io/powerplatf
 
 Guidance is organized by product area under [`docs/`](docs). **Start with the [documentation overview](docs/index.md)**—it compares accessibility conformance, tooling, and effort across surfaces, with separate reading paths for Solution Architects and developers.
 
-- [Power Pages](docs/powerpages)
-- [Power Apps—Canvas apps](docs/powerapps-canvas)
-- [Power Apps—Code Apps](docs/powerapps-codeapps)
+- [Power Pages](docs/power-pages)
+- [Power Apps—Canvas apps](docs/canvas-apps)
+- [Power Apps—Code Apps](docs/code-apps)
 - [Power Apps Component Framework (PCF)](docs/powerapps-component-framework)
-- [Power Apps—Generative/AI-generated pages](docs/powerapps-generative-pages) *(placeholder—not yet written)*
+- [Power Apps—Generative/AI-generated pages](docs/generative-pages) *(placeholder—not yet written)*
 - [Fluent UI React (v9)](docs/fluent-ui-react)—shared reference for the component library used by PCF and Code Apps
 
 Some areas are still placeholders—see [Contributing](#contributing) if you'd like to help fill them in.

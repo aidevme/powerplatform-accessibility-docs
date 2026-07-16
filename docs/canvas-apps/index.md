@@ -15,7 +15,7 @@ Canvas apps are the drag-and-drop, formula-based Power Apps experience. Microsof
 
 ## Accessibility standards
 
-Microsoft's canvas app accessibility docs don't state conformance to WCAG, Section 508, or EN 301 549 the way the [Power Pages accessibility page](../powerpages/index.md) does. The closest thing to a standard is numeric: the platform's contrast guidance requires **4.5:1 for normal text** and **3:1 for large text and non-text elements**, which matches [WCAG 1.4.3 (Contrast Minimum)](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html) at Level AA. Color contrast itself is **not** automatically checked by the Accessibility Checker—verifying it is a manual step.
+Microsoft's canvas app accessibility docs don't state conformance to WCAG, Section 508, or EN 301 549 the way the [Power Pages accessibility page](../power-pages/index.md) does. The closest thing to a standard is numeric: the platform's contrast guidance requires **4.5:1 for normal text** and **3:1 for large text and non-text elements**, which matches [WCAG 1.4.3 (Contrast Minimum)](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html) at Level AA. Color contrast itself is **not** automatically checked by the Accessibility Checker—verifying it is a manual step.
 
 ## Built-in tooling: Accessibility Checker
 

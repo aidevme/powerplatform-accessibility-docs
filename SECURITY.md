@@ -1,5 +1,7 @@
 # Security
 
+![Security policy banner—a shield with a checkmark and a padlock, connected to icons for review, private disclosure, and sensitive data, on a blue-to-purple gradient background](assets/security-page.png)
+
 This repository is a documentation-only project — it contains no application code, and doesn't process user data or run a service. Most of what would normally be a "security vulnerability" elsewhere doesn't apply here.
 
 That said, if you find something with real security implications, please report it privately rather than opening a public issue. Examples of what belongs here:

@@ -1,5 +1,7 @@
 # Writing Style Guide
 
+![Writing style guide banner—an open book with a pen across its pages, connected to icons for page structure, review checklists, and consistent terminology, on a blue-to-purple gradient background](assets/writing_style_guide_page.png)
+
 This guide provides prescriptive instructions for writing accessibility guidance pages in this repository. For scope, frontmatter requirements, environment setup, and how to submit changes, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Required Page Structure
@@ -37,7 +39,7 @@ Open with 1-2 short paragraphs stating what the reader needs to know and why. Ad
 
 Follow with a clear statement of the reader's responsibility, since most pages in this repo hinge on a **platform conforms, but customizations are your responsibility** distinction. Bold the core takeaway.
 
-**Example** (from `docs/powerpages/index.md`):
+**Example** (from `docs/power-pages/index.md`):
 
 > Power Pages the *platform* conforms to WCAG 2.2, Section 508, and EN 301 549. However, conformance is not automatically inherited by your site once you add custom HTML, Liquid, JavaScript, CSS, or embedded components (Power BI reports, custom web templates, etc.). **You own the accessibility of anything you customize.**
 

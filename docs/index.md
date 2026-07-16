@@ -16,11 +16,11 @@ This repo covers accessibility across five Power Platform surfaces, and the hone
 
 | Surface | Platform conformance stated? | Built-in accessibility tooling | Who owns compliance | Effort to reach compliance |
 | --- | --- | --- | --- | --- |
-| [Power Pages](powerpages/index.md) | **Yes**—explicit WCAG 2.2, Section 508, EN 301 549 | None built-in; [Accessibility Insights](https://accessibilityinsights.io/) recommended | Platform conforms; you own anything you customize (Liquid, HTML, embeds) | Low–Medium |
-| [Canvas apps](powerapps-canvas/index.md) | Implied only—contrast thresholds match WCAG 2.x AA, but no standard is named | **Yes**—Studio's built-in Accessibility Checker | Shared: platform provides accessible controls, you use the right properties | Low |
+| [Power Pages](power-pages/index.md) | **Yes**—explicit WCAG 2.2, Section 508, EN 301 549 | None built-in; [Accessibility Insights](https://accessibilityinsights.io/) recommended | Platform conforms; you own anything you customize (Liquid, HTML, embeds) | Low–Medium |
+| [Canvas apps](canvas-apps/index.md) | Implied only—contrast thresholds match WCAG 2.x AA, but no standard is named | **Yes**—Studio's built-in Accessibility Checker | Shared: platform provides accessible controls, you use the right properties | Low |
 | [PCF (standard control)](powerapps-component-framework/index.md) | None | None—browser dev tools only | Entirely yours: ARIA, keyboard nav, focus, labelling | High |
 | [PCF (React + Fluent platform library)](powerapps-component-framework/index.md#building-with-react-and-fluent-ui) | None from PCF itself; [Fluent UI's own components](fluent-ui-react/index.md) are built to meet WCAG/WAI-ARIA | None PCF-specific; inherits Fluent's `axe-core`-tested components | Shared: Fluent's components are accessible by default, you still own labelling/live regions/focus indicators | Medium |
-| [Code Apps](powerapps-codeapps/index.md) | None—no Microsoft accessibility documentation exists for this surface | None by default; can add `eslint-plugin-jsx-a11y` + `vite-plugin-checker` + `@axe-core/react` | Entirely yours, from the first line of code | High |
+| [Code Apps](code-apps/index.md) | None—no Microsoft accessibility documentation exists for this surface | None by default; can add `eslint-plugin-jsx-a11y` + `vite-plugin-checker` + `@axe-core/react` | Entirely yours, from the first line of code | High |
 
 [Fluent UI React (v9)](fluent-ui-react/index.md) isn't a Power Platform surface on its own—it's the shared component library behind the PCF and Code Apps rows above, so its accessibility architecture (labelling, focus indicators, live regions, truncation) is documented once and linked from both.
 
@@ -48,11 +48,11 @@ A quick heuristic if you're scoping a new build and accessibility compliance is 
 
 ## Product areas
 
-- [Power Pages](powerpages/index.md)
-- [Power Apps—Canvas apps](powerapps-canvas/index.md)
-- [Power Apps—Code Apps](powerapps-codeapps/index.md)
+- [Power Pages](power-pages/index.md)
+- [Power Apps—Canvas apps](canvas-apps/index.md)
+- [Power Apps—Code Apps](code-apps/index.md)
 - [Power Apps Component Framework (PCF)](powerapps-component-framework/index.md)
-- [Power Apps—Generative/AI-generated pages](powerapps-generative-pages/index.md) *(placeholder—not yet written)*
+- [Power Apps—Generative/AI-generated pages](generative-pages/index.md) *(placeholder—not yet written)*
 - [Fluent UI React (v9)](fluent-ui-react/index.md)
 
 See [CONTRIBUTING.md](https://github.com/aidevme/powerplatform-accessibility-docs/blob/main/CONTRIBUTING.md) if you'd like to help fill in a placeholder page.

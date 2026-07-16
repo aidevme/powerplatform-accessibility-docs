@@ -1,5 +1,7 @@
 # Contributing
 
+![Contributing banner—two hands coming together, one holding a pencil and one a checkmark, connected to icons for documentation, contribution workflow, and discussion, on a blue-to-purple gradient background](assets/contributing-page.png)
+
 Thanks for helping build a curated, trustworthy accessibility knowledge base for Power Platform. This project is almost entirely documentation, so most contributions are writing, correcting, or reviewing content rather than code.
 
 ## About this repository
@@ -29,7 +31,7 @@ Content should be useful to architects and developers shipping compliant enterpr
 
 ## Documentation structure and conventions
 
-- Pages live under `docs/<product-area>/`, e.g. `docs/powerpages/index.md`. Use one directory per product area; add new pages under the relevant one, or create a new directory for a new area.
+- Pages live under `docs/<product-area>/`, e.g. `docs/power-pages/index.md`. Use one directory per product area; add new pages under the relevant one, or create a new directory for a new area.
 - Each page starts with frontmatter:
 
   ```yaml
@@ -91,7 +93,7 @@ Use the following prefixes for branch names:
 3. Follow the [Conventional Commits](https://www.conventionalcommits.org/) format for commit messages: `<type>(<scope>): <subject>`.
    - Common types for this repo: `docs` (content changes), `chore` (repo tooling, templates, config), `fix` (correcting an error in existing docs).
    - Examples:
-     - `docs(powerpages): correct WCAG version referenced in forms section`
+     - `docs(power-pages): correct WCAG version referenced in forms section`
      - `docs(canvasapps): add accessible screen reader guidance page`
      - `chore(github): update issue templates`
 4. Open a pull request describing:

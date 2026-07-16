@@ -23,7 +23,7 @@ Power Apps Code Apps let developers build apps with standard code (React, TypeSc
 
 ## Why there's no platform-specific guidance
 
-Code apps are the newest Power Apps surface, built around developer-owned code rather than a managed designer. In that sense they're closer in spirit to Power Pages' custom Liquid/HTML than to canvas apps' Studio-managed controls—except that, unlike Power Pages, there's no top-level [accessibility conformance page](../powerpages/index.md) covering this surface yet.
+Code apps are the newest Power Apps surface, built around developer-owned code rather than a managed designer. In that sense they're closer in spirit to Power Pages' custom Liquid/HTML than to canvas apps' Studio-managed controls—except that, unlike Power Pages, there's no top-level [accessibility conformance page](../power-pages/index.md) covering this surface yet.
 
 ## Closest Microsoft precedent
 
@@ -126,4 +126,4 @@ Since there's no Power Platform–specific conformance statement to point to for
 - [WCAG 2.2](https://www.w3.org/TR/WCAG22/)
 - [WAI-ARIA Authoring Practices Guide](https://www.w3.org/WAI/ARIA/apg/)
 - [Microsoft Accessibility](https://www.microsoft.com/en-us/accessibility)
-- [Accessibility in Power Pages](../powerpages/index.md)—a comparable custom-code surface that does have Microsoft accessibility guidance
+- [Accessibility in Power Pages](../power-pages/index.md)—a comparable custom-code surface that does have Microsoft accessibility guidance

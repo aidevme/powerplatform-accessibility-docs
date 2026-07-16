@@ -7,8 +7,8 @@ body:
     id: page
     attributes:
       label: Page(s) affected
-      description: Path or URL of the doc page(s), e.g. docs/powerpages/index.md
-      placeholder: docs/powerpages/index.md
+      description: Path or URL of the doc page(s), e.g. docs/power-pages/index.md
+      placeholder: docs/power-pages/index.md
     validations:
       required: true
 

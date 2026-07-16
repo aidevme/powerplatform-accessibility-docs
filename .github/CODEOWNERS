@@ -14,11 +14,11 @@
 # Documentation — per product area
 # ============================================================================
 docs/index.md                                                  @aidevme
-docs/powerpages/**                                              @aidevme
-docs/powerapps-canvas/**                                        @aidevme
-docs/powerapps-codeapps/**                                      @aidevme
+docs/power-pages/**                                              @aidevme
+docs/canvas-apps/**                                        @aidevme
+docs/code-apps/**                                      @aidevme
 docs/powerapps-component-framework/**                            @aidevme
-docs/powerapps-generative-pages/**                               @aidevme
+docs/generative-pages/**                               @aidevme
 docs/fluent-ui-react/**                                         @aidevme
 
 # ============================================================================

@@ -19,16 +19,16 @@ export default defineConfig({
       {
         text: 'Product areas',
         items: [
-          { text: 'Power Pages', link: '/powerpages/index' },
-          { text: 'Power Apps—Canvas apps', link: '/powerapps-canvas/index' },
-          { text: 'Power Apps—Code Apps', link: '/powerapps-codeapps/index' },
+          { text: 'Power Pages', link: '/power-pages/index' },
+          { text: 'Power Apps—Canvas apps', link: '/canvas-apps/index' },
+          { text: 'Power Apps—Code Apps', link: '/code-apps/index' },
           {
             text: 'Power Apps Component Framework (PCF)',
             link: '/powerapps-component-framework/index',
           },
           {
             text: 'Power Apps—Generative/AI-generated pages',
-            link: '/powerapps-generative-pages/index',
+            link: '/generative-pages/index',
           },
           { text: 'Fluent UI React (v9)', link: '/fluent-ui-react/index' },
         ],

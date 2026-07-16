@@ -7,7 +7,7 @@ last_verified: 2026-07-15
 
 # Accessibility in Fluent UI React (v9)
 
-Fluent UI React is the component library Microsoft recommends across Power Platform's custom-code surfaces: [PCF's own best practices](../powerapps-component-framework/index.md#what-microsoft-documents) call it out by name, and it's a reasonable choice for [Code Apps](../powerapps-codeapps/index.md) too, even though neither official code-apps template ships it by default. This page covers Fluent UI v9's own accessibility architecture—what it does for you, and what you still have to get right—so it doesn't need repeating on every product-area page that touches it.
+Fluent UI React is the component library Microsoft recommends across Power Platform's custom-code surfaces: [PCF's own best practices](../powerapps-component-framework/index.md#what-microsoft-documents) call it out by name, and it's a reasonable choice for [Code Apps](../code-apps/index.md) too, even though neither official code-apps template ships it by default. This page covers Fluent UI v9's own accessibility architecture—what it does for you, and what you still have to get right—so it doesn't need repeating on every product-area page that touches it.
 
 **Key takeaway:** Fluent UI v9 components are built to meet WCAG and WAI-ARIA out of the box (semantic DOM, ARIA state, keyboard/screen-reader navigation, focus handling, contrast, and Light/Dark/High-Contrast themes), and this is verified with `axe-core` in Fluent's own CI. But **using accessible components doesn't make your app accessible**—labelling, live-region announcements, focus-indicator styling, and truncation are all things you still have to get right yourself, and Fluent's own documentation is explicit that these are easy to get wrong.
 
@@ -149,4 +149,4 @@ Fluent's recommended alternatives, in order of preference:
 - [Truncation](https://github.com/microsoft/fluentui/blob/master/apps/public-docsite-v9/src/Concepts/Accessibility/Truncation.mdx)
 - [tabster](https://github.com/microsoft/tabster)—the focus-management library Fluent UI is built on
 - [Accessibility in Power Apps Component Framework (PCF) controls](../powerapps-component-framework/index.md)
-- [Accessibility in Power Apps Code Apps](../powerapps-codeapps/index.md)
+- [Accessibility in Power Apps Code Apps](../code-apps/index.md)

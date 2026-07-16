@@ -92,6 +92,6 @@ The officially documented equivalent is the **Fluent platform library** describe
 - [Context object reference](https://learn.microsoft.com/en-us/power-apps/developer/component-framework/reference/context)
 - [context.mode reference](https://learn.microsoft.com/en-us/power-apps/developer/component-framework/reference/mode)
 - [context.userSettings reference](https://learn.microsoft.com/en-us/power-apps/developer/component-framework/reference/usersettings)
-- [Create accessible canvas apps](../powerapps-canvas/index.md)—cross-referenced by Microsoft's own PCF docs as further reading
+- [Create accessible canvas apps](../canvas-apps/index.md)—cross-referenced by Microsoft's own PCF docs as further reading
 - [Accessibility in Fluent UI React (v9)](../fluent-ui-react/index.md)—component labelling, focus indicators, live regions, and truncation guidance for the library PCF recommends
 - [WAI-ARIA Authoring Practices Guide](https://www.w3.org/WAI/ARIA/apg/)
