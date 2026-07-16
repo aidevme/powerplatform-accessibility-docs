@@ -27,9 +27,12 @@ export default defineConfig({
             link: '/powerapps-component-framework/index',
           },
           {
-            text: 'Power Apps—Generative/AI-generated pages',
+            text: 'Power Apps—Generative pages',
             link: '/generative-pages/index',
           },
+          { text: 'Power Apps—MCP App widgets', link: '/mcp-apps/index' },
+          { text: 'Power Apps—Model-driven apps', link: '/model-apps/index' },
+          { text: 'Power Apps—Mobile client', link: '/mobile-apps/index' },
           { text: 'Fluent UI React (v9)', link: '/fluent-ui-react/index' },
         ],
       },
