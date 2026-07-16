@@ -23,10 +23,13 @@ Guidance is organized by product area under [`docs/`](docs). **Start with the [d
 - [Power Apps—Canvas apps](docs/canvas-apps)
 - [Power Apps—Code Apps](docs/code-apps)
 - [Power Apps Component Framework (PCF)](docs/powerapps-component-framework)
-- [Power Apps—Generative/AI-generated pages](docs/generative-pages) *(placeholder—not yet written)*
+- [Power Apps—Generative pages](docs/generative-pages)
+- [Power Apps—MCP App widgets](docs/mcp-apps)
+- [Power Apps—Model-driven apps](docs/model-apps)
+- [Power Apps—Mobile client](docs/mobile-apps)
 - [Fluent UI React (v9)](docs/fluent-ui-react)—shared reference for the component library used by PCF and Code Apps
 
-Some areas are still placeholders—see [Contributing](#contributing) if you'd like to help fill them in.
+See [Contributing](#contributing) if you'd like to help add a new product area or improve an existing page.
 
 ## Discussions
 
