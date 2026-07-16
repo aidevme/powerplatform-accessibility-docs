@@ -14,6 +14,8 @@ Power Platform makes it easy to build apps and sites quickly, but accessibility 
 
 ## Documentation
 
+The published documentation site is available at **[aidevme.github.io/powerplatform-accessibility-docs](https://aidevme.github.io/powerplatform-accessibility-docs/)**.
+
 Guidance is organized by product area under [`docs/`](docs). **Start with the [documentation overview](docs/index.md)**—it compares accessibility conformance, tooling, and effort across surfaces, with separate reading paths for Solution Architects and developers.
 
 - [Power Pages](docs/powerpages)
