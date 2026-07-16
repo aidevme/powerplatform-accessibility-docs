@@ -20,6 +20,7 @@ export default defineConfig({
       {
         text: 'Product areas',
         items: [
+          { text: 'Fluent UI React (v9)', link: '/fluent-ui-react/index' },
           { text: 'Power Pages', link: '/power-pages/index' },
           { text: 'Power Apps—Canvas apps', link: '/canvas-apps/index' },
           { text: 'Power Apps—Code Apps', link: '/code-apps/index' },
@@ -34,7 +35,6 @@ export default defineConfig({
           { text: 'Power Apps—MCP App widgets', link: '/mcp-apps/index' },
           { text: 'Power Apps—Model-driven apps', link: '/model-apps/index' },
           { text: 'Power Apps—Mobile client', link: '/mobile-apps/index' },
-          { text: 'Fluent UI React (v9)', link: '/fluent-ui-react/index' },
         ],
       },
     ],

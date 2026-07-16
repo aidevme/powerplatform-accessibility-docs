@@ -19,6 +19,7 @@ The published documentation site is available at **[aidevme.github.io/powerplatf
 
 Guidance is organized by product area under [`docs/`](docs). **Start with the [documentation overview](docs/index.md)**—it compares accessibility conformance, tooling, and effort across surfaces, with separate reading paths for Solution Architects and developers.
 
+- [Fluent UI React (v9)](docs/fluent-ui-react)—shared reference for the component library used by PCF and Code Apps
 - [Power Pages](docs/power-pages)
 - [Power Apps—Canvas apps](docs/canvas-apps)
 - [Power Apps—Code Apps](docs/code-apps)
@@ -27,7 +28,6 @@ Guidance is organized by product area under [`docs/`](docs). **Start with the [d
 - [Power Apps—MCP App widgets](docs/mcp-apps)
 - [Power Apps—Model-driven apps](docs/model-apps)
 - [Power Apps—Mobile client](docs/mobile-apps)
-- [Fluent UI React (v9)](docs/fluent-ui-react)—shared reference for the component library used by PCF and Code Apps
 
 See [Contributing](#contributing) if you'd like to help add a new product area or improve an existing page.
 
