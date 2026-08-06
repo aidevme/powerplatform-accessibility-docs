@@ -10,7 +10,7 @@
     "jszip": "^3.10.1",
     "markdownlint-cli2": "^0.23.0",
     "simple-icons": "^16.26.0",
-    "vitepress": "^2.0.0-alpha.18"
+    "vitepress": "^2.0.0-alpha.19"
   },
   "scripts": {
     "docs:dev": "vitepress dev docs",
