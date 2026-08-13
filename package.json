@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "devDependencies": {
-    "@fluentui/svg-icons": "^1.1.333",
+    "@fluentui/svg-icons": "^1.1.335",
     "@playwright/test": "^1.61.1",
     "@types/node": "^26.1.1",
     "gray-matter": "^4.0.3",
